@@ -1,59 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
-<title>Swati | Portfolio</title>
+<title>Portfolio</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HERO SECTION -->
+<nav class="navbar">
+
+<div class="logo">
+<h1>Swati Kushwaha</h1>
+</div>
+
+<div class="nav-links">
+
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#profiles">Profiles</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+
+<section class="hero-bg">
 
 <section class="hero">
 
-<h1>Hi, I'm Swati</h1>
+<h1>Hi, I'm Swati 👋</h1>
 
-<p>B.Tech IT Student • Software Developer • Problem Solver</p>
+<p>B.Tech Information Technology Student</p>
+
+<a href="#projects" class="repo-btn">View My Work</a>
+
+</section>
 
 </section>
 
 
-<!-- ABOUT -->
-
-<section class="blue-bg">
+<section id="about" class="about-bg">
 
 <div class="card">
 
-<div class="columns">
+<div class="section-title">
+
+<div class="icon">👩‍🎓</div>
+
+<div>
+<h2>About Me</h2>
+</div>
+
+</div>
+
+<div class="rows">
 
 <div>
 
 <p>
-I've always been curious about how technology works and how software
-can solve real-world problems. During my B.Tech journey in Information
-Technology at Banasthali Vidyapith, I developed a strong interest in
-software development and programming.
+I am a third-year B.Tech Information Technology student at Banasthali Vidyapith.
+I am passionate about building software solutions and solving real-world
+problems using technology.
 </p>
 
 <p>
-I enjoy building projects, learning new technologies, and improving
-my problem-solving skills through consistent practice.
+I enjoy learning new technologies and strengthening my programming
+skills through consistent practice and hands-on projects.
 </p>
 
 </div>
 
-
 <div>
 
 <p>
-My main interests include Data Structures & Algorithms, backend
-development, and building scalable applications.
+My main interests include backend development, system design,
+and writing clean and efficient code.
 </p>
 
 <p>
-I actively practice coding on LeetCode and build projects that help
-me understand real-world development challenges.
+I actively practice coding on LeetCode and continuously improve
+my technical skills through projects and open learning.
 </p>
 
 </div>
@@ -65,9 +96,52 @@ me understand real-world development challenges.
 </section>
 
 
-<!-- SKILLS -->
+<section id="education" class="education-bg">
 
-<section class="green-bg">
+<div class="card">
+
+<div class="section-title">
+
+<div class="icon">🎓</div>
+
+<div>
+<h2>Education</h2>
+</div>
+
+</div>
+
+<div class="education-container">
+
+<div class="edu-item">
+
+<h3>B.Tech in Information Technology</h3>
+
+<p>Banasthali Vidyapith</p>
+
+<p>2023 – 2027</p>
+
+<p>CGPA: 7.94 / 10  till 5th Semester</p>
+
+</div>
+
+<div class="edu-item">
+
+<h3>Senior Secondary (Class XII)</h3>
+
+<p>Maharishi Vidya Mandir, Lucknow</p>
+
+<p>Year: 2022</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="skills" class="skills-bg">
 
 <div class="card">
 
@@ -76,8 +150,7 @@ me understand real-world development challenges.
 <div class="icon">💻</div>
 
 <div>
-<h2>Code</h2>
-<p class="subtitle">Technologies I use.</p>
+<h2>Skills</h2>
 </div>
 
 </div>
@@ -90,7 +163,8 @@ me understand real-world development challenges.
 <li>CSS</li>
 <li>JavaScript</li>
 <li>Git & GitHub</li>
-<li>Data Structures</li>
+<li>Data Structures & Algorithms</li>
+<li>MySQL</li>
 
 </ul>
 
@@ -99,9 +173,7 @@ me understand real-world development challenges.
 </section>
 
 
-<!-- PROJECTS -->
-
-<section class="blue-bg">
+<section id="projects" class="projects-bg">
 
 <div class="card">
 
@@ -111,33 +183,52 @@ me understand real-world development challenges.
 
 <div>
 <h2>Projects</h2>
-<p class="subtitle">Things I have built.</p>
 </div>
 
 </div>
+
+<div class="project-container">
+
+<div class="project-card">
 
 <h3>Food Sathi</h3>
 
 <p>
 A food sustainability platform that promotes responsible food
 consumption and helps reduce food waste.
+This project was developed as part of a hackathon and we were the semifinalists in this hackathon(Vultr Cloud Hackathon 2024).
 </p>
 
-<h3>Campus Transport Tracking App</h3>
+<a href="https://github.com/swati-kushwaha/foodsathi-main" target="_blank" class="repo-btn">
+View Repository
+</a>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>Banasthali-Buddy</h3>
 
 <p>
-A real-time campus vehicle tracking system that allows students
-to track transport availability efficiently.
+Real-time campus bus tracking, e-rickshaw booking,
+and student goods exchange platform.currently working on this project and i am working on the backend part of this project. I am using Java(springboot) and MongoDB for the backend development.
 </p>
+
+<a href="https://github.com/swati-kushwaha/banasthali-buddy" target="_blank" class="repo-btn">
+View Repository
+</a>
+
+</div>
+
+</div>
 
 </div>
 
 </section>
 
 
-<!-- CODING PROFILES -->
-
-<section class="green-bg">
+<section id="profiles" class="profiles-bg">
 
 <div class="card">
 
@@ -147,19 +238,18 @@ to track transport availability efficiently.
 
 <div>
 <h2>Profiles</h2>
-<p class="subtitle">Where I practice coding.</p>
 </div>
 
 </div>
 
 <p>
-LeetCode:
-<a href="#">leetcode.com/yourusername</a>
+LeetCode :
+<a href="https://leetcode.com/u/swati11_04/">swati11_04</a>
 </p>
 
 <p>
-GitHub:
-<a href="#">github.com/yourusername</a>
+GitHub :
+<a href="https://github.com/swati-kushwaha">Swati-Kushwaha</a>
 </p>
 
 </div>
@@ -167,9 +257,7 @@ GitHub:
 </section>
 
 
-<!-- CONTACT -->
-
-<section class="blue-bg">
+<section id="contact" class="contact-bg">
 
 <div class="card">
 
@@ -179,13 +267,19 @@ GitHub:
 
 <div>
 <h2>Contact</h2>
-<p class="subtitle">Let's connect.</p>
 </div>
 
 </div>
+<p class="subtitle">Let's connect</p>
+<p>Phone no: +91 9335682764</p>
+<p>Email : swati11kushwaha521@gmail.com</p>
 
-<p>Email: yourmail@gmail.com</p>
-<p>LinkedIn: linkedin.com/in/yourprofile</p>
+<p>
+LinkedIn :
+<a href="https://www.linkedin.com/in/swati-kushwaha-ba2895284/">
+Swati-Kushwaha
+</a>
+</p>
 
 </div>
 
@@ -194,7 +288,7 @@ GitHub:
 
 <footer>
 
-<p>© 2026 Swati • Built with HTML & CSS</p>
+<p>Swati Kushwaha | BTech IT 3rd Year</p>
 
 </footer>
 
